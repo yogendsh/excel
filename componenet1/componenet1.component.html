@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="first">  <h4 >Upload Excel</h4></div>
+
+
+<div class="selection"><p-dropdown [options]="sheetName"  placeholder="Select sheet type" optionLabel="name" [showClear]="true"></p-dropdown>
+  <input type="file" (change)="onFileChange($event)" class="btn btn-success btn-sm ifield"/>
+
+</div>
+
+<div class="first"> <h4>Generate Excel</h4></div>
+
+<input type="button" (click)="CreateTableFromJSON()" value="Create Table" class="btn btn-primary butfield"/>
+<p-dialog [(visible)]="display">
+
+  <p-header>
+    Excel Table
+</p-header>
+<p id="showData"></p>
+<p-footer>
+  <button (click)="exportToExcel()" class="btn btn-primary">Export to excel</button>
+</p-footer>
+
+</p-dialog>
+
+
+
+
+
+</div>

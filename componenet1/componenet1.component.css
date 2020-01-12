@@ -1,0 +1,18 @@
+.container {
+  margin-top: 40px;
+  background-color: #c9ded7;
+  height: 300px;
+}
+.first {
+  padding-top: 20px;
+}
+.selection {
+  margin-top: 20px;
+  margin-left: 150px;
+}
+.ifield {
+  margin-left: 250px;
+}
+.butfield {
+  margin-top: 20px;
+}
